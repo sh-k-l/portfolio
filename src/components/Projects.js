@@ -14,7 +14,6 @@ class Projects extends Component{
       selectedTags:["Frontend"]
     }
     this.handleTagClick = this.handleTagClick.bind(this);  
-    console.log(PROJECTS_LIST)
   }
 
 
@@ -39,16 +38,17 @@ class Projects extends Component{
       if(this.state.selectedTags.length === 0 || p.tags.some(tag => this.state.selectedTags.includes(tag))){
         return <Project key={p.title} {...p}/>;
       }
+      return null;
     });    
 
-    const tags = this.state.allTags.map(t => ( 
-      <span className={(this.state.selectedTags.indexOf(t) !== -1? "selected" : "")}
-      onClick={this.handleTagClick}>{t}</span>));
+    const tags = this.state.allTags.map((t, i) => ( 
+      <li key={i} className={(this.state.selectedTags.indexOf(t) !== -1? "selected" : "")}
+      onClick={this.handleTagClick}>{t}</li>));
 
     return (      
-      <div className="projects-wrapper">
+      <div className="section projects-wrapper">
         <h2>Projects</h2>
-        <p className="projects-tags">Sort by: {this.state.allTags.length === 0 ? "No tags found" : tags}</p>
+        <ul className="projects-tags"><li><span>Sort by:</span></li> {this.state.allTags.length === 0 ? <li>No tags found</li> : tags}</ul>
         {pList}
       </div>
     );

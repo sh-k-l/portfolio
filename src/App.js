@@ -5,15 +5,16 @@ import './App.scss';
 import Layout from './components/Layout';
 import Landing from './components/Landing';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
 
 class App extends Component {
   render() {
     return (
       <Layout>
-        <Landing/>
+        {/* <Landing/> */}
         <Projects/>
-        {/* <Experience/>
-        <About/>
+        <Experience/>
+        {/* <About/>
         <Contact/> */}
       </Layout>
     );

@@ -1,8 +1,14 @@
 @import "../styles/global.scss";
 
 .projects-tags{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding:0;
 
-  span{
+  li:not(:first-child) {
+    
     text-decoration: underline;
     cursor: pointer;
 
@@ -18,14 +24,19 @@
       color:$accent-color;
     }
   }
+
+  li:first-child{
+    margin-right: 10px;
+  }
 }
 
 
 .project{
   display:flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom:1rem;
-  height:220px;
+  
 
   border: 1px solid #efefef;
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
@@ -34,28 +45,49 @@
   &:hover{
     box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
   }
+
+  
+  @media only screen and (min-width: $breakpoint-sm){
+    width:80%;
+    margin: 1rem auto;
+  }
+
+  @media only screen and (min-width: $breakpoint-md){
+    flex-direction: row;
+    height:220px;
+    width:100%;
+  }
 }
 
 .project-image-wrapper {
   position: relative;
   display: flex;
-  height:100%;
+
+
+  @media only screen and (min-width: $breakpoint-md){
+    height:100%;
+  }
 }
 
 .project-image {
   height: 100%;
-  width: 290px;
-  border-right:1px solid $grey;
+  width:100%;
+  filter: blur(1px);
+  border:1px solid $grey;
+
+  @media only screen and (min-width: $breakpoint-md){
+    width: 290px;
+  }
 }
 
 .project-links{
   width:100%;
   position: absolute;
-  bottom:3px;
-  left: 0;
+  bottom: 3px;
+  left: 5px;
 
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   transition: opacity 0.3s;
 
   a{
@@ -84,19 +116,28 @@
     }
     
   }
+  
 }
 
 
 .project-details{
-  padding:10px 20px 10px 30px;
+  padding:5px 20px;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  @media only screen and (min-width: $breakpoint-md){
+    padding:10px 20px 10px 30px;
+  }
 }
 
 .project-tags{  
-  line-height: 1;
-  color: $accent-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
+  line-height: 1.2;
+  color: $accent-color;
+  
   span{
     opacity:0.7;
     &:hover{
@@ -106,9 +147,7 @@
   span:not(:last-child){
     margin-right:10px;
   }
-
 }
-
 
 .project-title{
   margin:5px 0;
@@ -116,7 +155,4 @@
 
 .project-description{
   font-size:0.8rem; 
-  overflow: hidden;
-  // white-space: nowrap;
-  // text-overflow: ellipsis; 
 }
