@@ -52,7 +52,7 @@ class Projects extends Component{
 
   render(){
     const pList = PROJECTS_LIST.map(p => {
-      if(this.state.selectedTags.length === 0 || p.tags.some(tag => this.state.selectedTags.includes(tag))){
+      if(p.tags.some(tag => this.state.selectedTags.includes(tag))){
         return <Project key={p.title} {...p}/>;
       }
       return null;
