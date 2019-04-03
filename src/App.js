@@ -3,19 +3,18 @@ import React, { Component } from 'react';
 import './App.scss';
 
 import Layout from './components/Layout';
-import Landing from './components/Landing';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
     return (
       <Layout>
-        {/* <Landing/> */}
         <Projects/>
         <Experience/>
-        {/* <About/>
-        <Contact/> */}
+        {/* <About/> */}
+        {/* <Contact/> */}
       </Layout>
     );
   }

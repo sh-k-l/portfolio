@@ -1,10 +1,27 @@
 import React, {Component} from 'react';
-import Project from './Project';
 
 import PROJECTS_LIST from '../PROJECTS_LIST';
 
-import "./Projects.scss";
+const Project = (props) => { 
+  return(
+    <div className="project">
+      <div className="project-image-wrapper">
+        <img className="project-image" src={"/images/"+props.image} alt={"Image of "+props.title}/>
+        <div className="project-links">
+          {props.code ? <a href={props.code}>Code</a> : null} 
+          {props.demo ? <a href={props.demo}>Demo</a> : null} 
+          
+        </div>
+      </div>
 
+      <div className="project-details">
+        <p className="project-tags">{props.tags.map(tag => <span key={tag}>{tag}</span>)}</p>
+        <h3 className="project-title">{props.title}</h3>
+        <p className="project-description">{props.description.length < 140 ? props.description : props.description.substring(0,140) +"..."}</p>
+      </div>
+    </div>
+  )
+}
 
 class Projects extends Component{
   constructor(props){
@@ -46,9 +63,9 @@ class Projects extends Component{
       onClick={this.handleTagClick}>{t}</li>));
 
     return (      
-      <div className="section projects-wrapper">
-        <h2>Projects</h2>
-        <ul className="projects-tags"><li><span>Sort by:</span></li> {this.state.allTags.length === 0 ? <li>No tags found</li> : tags}</ul>
+      <div className="section projects-wrapper"  id="portfolio">
+        <h2>Portfolio</h2>
+        <ul className="projects-sort-tags"><li><span>Sort by:</span></li> {this.state.allTags.length === 0 ? <li>No tags found</li> : tags}</ul>
         {pList}
       </div>
     );

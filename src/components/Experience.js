@@ -1,9 +1,7 @@
 import React from 'react';
 
-import "./Experience.scss";
-
 export default () => (
-  <div className="section experience-wrapper">
+  <div className="section experience-wrapper" id="experience">
     <h2>Experience & Education</h2>
 
     <div className="experience">
@@ -12,7 +10,7 @@ export default () => (
         <h4>Digital Developer <span className="opaque">July 2018 - July 2019</span></h4>
         <p className="experience-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
       </div>
-      <img src="/images/tmbc.jpeg"/>
+      <img alt="Tonbridge and Malling Borough Councilt" src="/images/tmbc.jpeg"/>
     </div>
 
     <div className="experience">
@@ -21,7 +19,7 @@ export default () => (
         <p>University of Kent - Graduating Summer 2020</p>
         <p>Grade: <span className="opaque">TBC</span></p>
       </div>
-      <img src="/images/ukc.jpg"/>
+      <img alt="University of Kent" src="/images/ukc.jpg"/>
     </div>
   </div>
 )

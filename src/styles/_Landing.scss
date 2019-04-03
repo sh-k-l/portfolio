@@ -1,0 +1,74 @@
+.landing{
+  height:50vh;
+
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction:column;
+
+  background-color:$accent-color; 
+  background-image: linear-gradient(to right, $accent-color, darken($accent-color, 5%));
+  color:white;
+
+  position: relative;   
+
+  h1{
+    font-family: 'Major Mono Display', monospace;
+    color:white;
+
+    @media only screen and (min-width: $breakpoint-sm){
+      font-size: 3rem;
+    }
+    
+  }
+}
+
+nav{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-wrapper{
+  background-color:$accent-color;
+  background-image: linear-gradient(to right, $accent-color, darken($accent-color, 5%));
+  ul{    
+    display:flex;    
+    justify-content: center;
+
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    text-shadow: $subtle-shadow;
+
+    list-style-type: none;
+    padding:20px;
+    margin:0;   
+    
+
+    li{      
+      cursor:pointer;
+
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+
+      .active{
+        
+      }
+
+      @media only screen and (min-width: $breakpoint-sm){
+        &:not(:last-child){
+          margin-right: 30px;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $breakpoint-sm){
+      font-size: 1em;
+    }
+  }
+}
+

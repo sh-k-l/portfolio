@@ -1,6 +1,4 @@
-@import "../styles/global.scss";
-
-.projects-tags{
+.projects-sort-tags{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -96,7 +94,8 @@
     text-decoration: none;
     color:white;
     font-weight:600;
-    opacity: 0.8;
+    opacity: 0.5;
+    transition: opacity 0.3s;
   
     cursor: pointer;
     padding:5px;
