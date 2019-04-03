@@ -13,8 +13,7 @@ const ListList = (props) => (
 
 export default () => (
   <div className="landing">
-    <h1 className="etched-text">Shakil <br/>Choudhury</h1>
- 
+    <h1>Shakil <br/>Choudhury</h1> 
   
     <Sticky holderCmp={'nav'}>
     <div className="nav-wrapper">

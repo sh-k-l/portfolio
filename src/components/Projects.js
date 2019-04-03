@@ -51,12 +51,12 @@ class Projects extends Component{
   }
 
   render(){
-    const pList = PROJECTS_LIST.map(p => {
-      if(p.tags.some(tag => this.state.selectedTags.includes(tag))){
-        return <Project key={p.title} {...p}/>;
-      }
-      return null;
-    });    
+
+    const pList =  PROJECTS_LIST
+                    .filter(p => p.tags.some(tag => this.state.selectedTags.includes(tag)))
+                    .map(p => <Project key={p.title} {...p}/>);
+
+  
 
     const tags = this.state.allTags.map((t, i) => ( 
       <li key={i} className={(this.state.selectedTags.indexOf(t) !== -1? "selected" : "")}
@@ -66,7 +66,7 @@ class Projects extends Component{
       <div className="section projects-wrapper"  id="portfolio">
         <h2>Portfolio</h2>
         <ul className="projects-sort-tags"><li><span>Sort by:</span></li> {this.state.allTags.length === 0 ? <li>No tags found</li> : tags}</ul>
-        {pList}
+        {pList.length > 0 ? pList : <h3 className="opaque center">No tags selected.</h3>}
       </div>
     );
   }

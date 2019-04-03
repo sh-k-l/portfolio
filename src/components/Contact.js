@@ -23,11 +23,11 @@ export default () => (
 
         </form>
       </div>
-      <div class="contact-details">
-        <p><i className="fa fa-envelope"></i> <a href="mailto:shakilchyy@gmail.com">shakilchyy@gmail.com</a></p>
-        <p><i className="fa fa-phone"></i> 07449772760</p>
-        <p><i className="fa fa-linkedin"></i> <a href="#">Shakil Choudhury</a></p>
-        <p><i className="fa fa-github-square"></i> <a href="#">sh-k-l</a></p>
+      <div className="contact-details">
+        <div className="contact-node"><div className="icon-holder"><i className="fa fa-envelope fa"></i></div> <a href="mailto:shakilchyy@gmail.com">shakilchyy@gmail.com</a></div>
+        <div className="contact-node"><div className="icon-holder"><i className="fa fa-phone"></i></div> 07449772760</div>
+        <div className="contact-node"><div className="icon-holder"><i className="fa fa-linkedin"></i></div> <a href="#">Shakil Choudhury</a></div>
+        <div className="contact-node"><div className="icon-holder"><i className="fa fa-github"></i></div> <a href="https://github.com/sh-k-l">sh-k-l</a></div>
       </div>
     </div>
   </div>
