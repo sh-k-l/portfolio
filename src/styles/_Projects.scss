@@ -60,7 +60,7 @@
 .project-image-wrapper {
   position: relative;
   display: flex;
-
+  width: 100%;
 
   @media only screen and (min-width: $breakpoint-md){
     height:100%;
