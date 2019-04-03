@@ -1,7 +1,67 @@
 .contact-wrapper{
   display:flex;
+  flex-direction:column;
+  font-size: 1.1rem;
 
   &>div{
-    flex:1;
+    padding:0.5rem;
+  }
+
+
+
+
+  @media only screen and (min-width: $breakpoint-md){
+    flex-direction:row;
+  }
+  
+}
+
+
+.contact-form-wrapper{
+  flex:2;
+  
+  form > div{
+    display:flex;
+    flex-direction:column;    
+  }  
+
+  input[type=text], textarea, input[type=email] {
+    font-family: Work Sans,sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid $accent-color;
+  }
+
+  button{
+    font-family: Work Sans,sans-serif;
+    width:100%;
+    border-radius: 3px;
+    background-color: $accent-color;
+    color: white;
+    padding: 15px 32px;
+    transition:all 0.4s;
+    margin: 1rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border:none;
+    box-sizing:border-box;
+
+    &:hover{
+      background-color: white;
+      color: black;
+      border: 2px solid $accent-color;
+    }
+  }
+}
+
+.contact-details{
+  flex:1.5;
+  padding:2rem 1rem;
+  margin-left:3rem;
+  
+  a{
+    color:inherit;
   }
 }

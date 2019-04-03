@@ -64,13 +64,14 @@
 
   @media only screen and (min-width: $breakpoint-md){
     height:100%;
+    width: unset;
   }
 }
 
 .project-image {
   height: 100%;
   width:100%;
-  filter: blur(1px);
+  filter: blur(1px) grayscale(80%);
   border:1px solid $grey;
 
   @media only screen and (min-width: $breakpoint-md){

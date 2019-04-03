@@ -1,5 +1,13 @@
 [
   {
+    "title": "Onion or not?",
+    "tags": ["Frontend", "JavaScript", "React"],
+    "code": "https://github.com/sh-k-l/onion-or-not",
+    "demo": "https://sh-k-l.github.io/onion-or-not/",
+    "description": "Game. Gets two headlines from Reddit, one real and one fake. Pick the real one. How many can you get in a row?",
+    "image": "onion-or-not.png"
+  },
+  {
     "title": "What's on tonight?",
     "tags": ["Frontend", "JavaScript", "React"],
     "code": "https://github.com/sh-k-l/whatsontonight",
@@ -8,11 +16,10 @@
     "image": "whats-on-tonight.png"
   },
   {
-    "title": "Onion or not?",
+    "title": "Portfolio",
     "tags": ["Frontend", "JavaScript", "React"],
-    "code": "https://github.com/sh-k-l/onion-or-not",
-    "demo": "https://sh-k-l.github.io/onion-or-not/",
-    "description": "Gets two headlines from Reddit, one real and one fake. Pick the real one. How many can you get in a row?",
-    "image": "onion-or-not.png"
+    "code": "https://github.com/sh-k-l/portfolio",
+    "description": "Personal portfolio built with React and styled with Sass.",
+    "image": "portfolio.png"
   }
 ]
