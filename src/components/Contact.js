@@ -6,6 +6,7 @@ export default () => (
     <div className="contact-wrapper">
       <div className="contact-form-wrapper">
         <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="contact-form" value="contact" />
           <div>
             <label htmlFor="name">Your Name:</label>   
             <input required type="text" name="name" id="name" />          
