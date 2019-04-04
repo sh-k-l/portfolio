@@ -17,7 +17,7 @@ const Project = (props) => {
       <div className="project-details">
         <p className="project-tags">{props.tags.map(tag => <span key={tag}>{tag}</span>)}</p>
         <h3 className="project-title">{props.title}</h3>
-        <p className="project-description">{props.description.length < 180 ? props.description : props.description.substring(0,180) +"..."}</p>
+        <p className="project-description">{props.description.length < 140 ? props.description : props.description.substring(0,140) +"..."}</p>
       </div>
     </div>
   )
@@ -66,7 +66,9 @@ class Projects extends Component{
       <div className="section projects-wrapper"  id="portfolio">
         <h2>Portfolio</h2>
         <ul className="projects-sort-tags"><li><span>Sort by:</span></li> {this.state.allTags.length === 0 ? <li>No tags found</li> : tags}</ul>
-        {pList.length > 0 ? pList : <h3 className="opaque center">No tags selected.</h3>}
+        <div className="projects-list-wrapper">
+          {pList.length > 0 ? pList : <h3 className="opaque center">No tags selected.</h3>}
+        </div>
       </div>
     );
   }
