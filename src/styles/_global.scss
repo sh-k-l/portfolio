@@ -5,6 +5,7 @@ $accent-color: #1ca086;
 $opposite-color: #a0371c;
 
 $grey:rgb(239, 239, 239);
+$body-text-color: #666666;
 
 $subtle-shadow:0 1px 2px rgba(0,0,0,0.2);
 
@@ -26,7 +27,7 @@ html {
 
 body{
   font-family: Work Sans,sans-serif;
-  color:#666666;  
+  color:$body-text-color;  
 }
 
 h1,
@@ -64,8 +65,8 @@ h5 {
   font-style: italic;
 }
 
-.opaque{
-  opacity: 0.5;
+.light-text-color{
+  color:lighten($body-text-color, 40%);
 }
 
 .center{
@@ -128,6 +129,5 @@ footer{
   p{
     text-align:center;
     font-style:italic;
-    opacity:0.5
   }
 }

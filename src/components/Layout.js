@@ -6,7 +6,7 @@ export default (props) => (
     <Landing/>
     <div className="layout">
       {props.children}
-      <footer><p>Designed and coded by Shakil Choudhury - {new Date().getFullYear()}</p></footer>
+      <footer><p className="light-text-color">Designed and coded by Shakil Choudhury - {new Date().getFullYear()}</p></footer>
     </div>
   </>
 );
