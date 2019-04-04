@@ -9,7 +9,7 @@
   color:white;
 
   background-color:$accent-color; 
-  background-image: linear-gradient(to right, $accent-color, darken($accent-color, 5%));
+  background-image: $main-gradient;
 
   position: relative;   
 
@@ -53,7 +53,8 @@ nav{
 
 .nav-wrapper{
   background-color:$accent-color;
-  background-image: linear-gradient(to right, $accent-color, darken($accent-color, 5%));
+  background-image: $main-gradient;
+
   ul{    
     display:flex;    
     justify-content: center;

@@ -4,6 +4,8 @@
 $accent-color: #1ca086;
 $opposite-color: #a0371c;
 
+$main-gradient:linear-gradient(to right, $accent-color, darken($accent-color, 10%));
+
 $grey:rgb(239, 239, 239);
 $body-text-color: #666666;
 
@@ -44,7 +46,7 @@ h5 {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
