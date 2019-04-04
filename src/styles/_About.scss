@@ -1,0 +1,26 @@
+.about-wrapper{
+  display:flex;
+  flex-direction: column;
+  padding:1rem;
+
+  p{
+    text-align: justify;
+  }
+
+  .placeholder-img, img{
+    align-self: center;
+    margin-right:3rem;
+    min-height:150px;
+    min-width:150px;
+    max-height:150px;
+    max-width:150px;
+    background-color:darken($accent-color, 15%);
+    border-radius: 50%;
+  }
+
+
+  @media only screen and (min-width: $breakpoint-md){
+    flex-direction: row;
+  }
+}
+
