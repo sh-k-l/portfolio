@@ -1,6 +1,6 @@
 .experience{
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   justify-content:space-between;
   flex-direction: column-reverse;
   padding:10px;
@@ -11,6 +11,8 @@
     width: 120px;
     height:100%;
     margin:2rem;
+    align-self: center;
+
   }
 
   @media only screen and (min-width: $breakpoint-sm){

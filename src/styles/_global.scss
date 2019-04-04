@@ -72,6 +72,15 @@ h5 {
   text-align:center;
 }
 
+.layout{
+ 
+  @media only screen and (min-width: $breakpoint-md){
+    padding:1rem;
+    margin:1rem auto;
+    max-width:850px;
+  }
+}
+
 .section{
   // min-height:50vh;
   margin:4rem 0.5rem 0 0.5rem;

@@ -17,7 +17,7 @@ const Project = (props) => {
       <div className="project-details">
         <p className="project-tags">{props.tags.map(tag => <span key={tag}>{tag}</span>)}</p>
         <h3 className="project-title">{props.title}</h3>
-        <p className="project-description">{props.description.length < 140 ? props.description : props.description.substring(0,140) +"..."}</p>
+        <p className="project-description">{props.description.length < 180 ? props.description : props.description.substring(0,180) +"..."}</p>
       </div>
     </div>
   )

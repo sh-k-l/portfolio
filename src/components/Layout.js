@@ -4,7 +4,7 @@ import Landing from './Landing';
 export default (props) => (
   <>
     <Landing/>
-    <div style={{margin:"3rem auto", maxWidth:"650px"}}>
+    <div className="layout">
       {props.children}
       <footer><p>Designed and coded by Shakil Choudhury - {new Date().getFullYear()}</p></footer>
     </div>
