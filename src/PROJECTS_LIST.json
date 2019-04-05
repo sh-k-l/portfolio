@@ -19,7 +19,7 @@
     "title": "Portfolio",
     "tags": ["Frontend", "JavaScript", "React"],
     "code": "https://github.com/sh-k-l/portfolio",
-    "description": "Personal portfolio built with React and styled with Sass.",
+    "description": "Personal portfolio built with React (because I love JSX) and styled with Sass.",
     "image": "portfolio.png"
   }
 ]
