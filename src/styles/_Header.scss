@@ -1,6 +1,4 @@
 header{
-  height:25vh;
-
   display:flex;
   justify-content: center;
   align-items:center;
@@ -17,6 +15,7 @@ header{
     font-family: 'Major Mono Display', monospace;
     color:white;
     z-index: 99;
+    padding:1rem;
 
     @media only screen and (min-width: $breakpoint-sm){
       font-size: 3rem;
