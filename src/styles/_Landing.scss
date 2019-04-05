@@ -33,12 +33,17 @@
     height: 100%;
 
     
-    background-image: url("/images/js-code.jpg");
+    // background-image: url("/images/js-code.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    // filter: blur(4px);
+    // opacity: 0.2;
+
+    background-image: url("/images/sky.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
-    filter: blur(4px);
-    opacity: 0.2;
+  
   }
 }
 
