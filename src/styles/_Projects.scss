@@ -1,7 +1,7 @@
 .projects-list-wrapper{
   display:flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: flex-start;
   flex-direction: column;
 
@@ -132,7 +132,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   align-self: center;
-  flex:1;
+  flex:0.5;
 
   @media only screen and (min-width: $breakpoint-md){
     padding:10px 30px 10px 30px;
