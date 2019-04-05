@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Fade from 'react-reveal/Fade';
 
 import PROJECTS_LIST from '../PROJECTS_LIST';
 
@@ -66,9 +67,11 @@ class Projects extends Component{
       <div className="section projects-wrapper"  id="portfolio">
         <h2>Portfolio</h2>
         <ul className="projects-sort-tags"><li><span>Sort by:</span></li> {this.state.allTags.length === 0 ? <li>No tags found</li> : tags}</ul>
-        <div className="projects-list-wrapper">
-          {pList.length > 0 ? pList : <h3 className="opaque center">No tags selected.</h3>}
-        </div>
+        <Fade up>
+          <div className="projects-list-wrapper">          
+            {pList.length > 0 ? pList : <h3 className="opaque center">No tags selected.</h3>}
+          </div>
+        </Fade>
       </div>
     );
   }

@@ -1,9 +1,11 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 export default () => (
   <div className="section" id="contact">
     <h2>Contact Me</h2>
     <div className="contact-wrapper">
+      <Fade right>
       <div className="contact-form-wrapper">
         <form name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
@@ -20,14 +22,16 @@ export default () => (
             <textarea required name="message" id="message"></textarea>
           </div>
           <button type="submit">Send</button>
-
         </form>
       </div>
+      </Fade>
       <div className="contact-details">
+        <Fade left>
         <div className="contact-node"><div className="icon-holder"><i className="fa fa-envelope fa"></i></div> <a href="mailto:shakilchyy@gmail.com">shakilchyy@gmail.com</a></div>
         <div className="contact-node"><div className="icon-holder"><i className="fa fa-phone"></i></div> 07449772760</div>
         <div className="contact-node"><div className="icon-holder"><i className="fa fa-linkedin"></i></div> <a href="#">Shakil Choudhury</a></div>
         <div className="contact-node"><div className="icon-holder"><i className="fa fa-github"></i></div> <a href="https://github.com/sh-k-l">sh-k-l</a></div>
+        </Fade>
       </div>
     </div>
   </div>
