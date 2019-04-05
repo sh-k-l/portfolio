@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import Sticky from 'react-sticky-el';
+import Fade from 'react-reveal/Fade';
 
 const ListList = (props) => (
   <li className="hover-underline-animation">      
@@ -12,18 +13,22 @@ const ListList = (props) => (
 
 
 export default () => (
-  <header>
+  <header>    
     <div className="header-text-wrapper">
+      <Fade up>
       <h1>Shakil <br/>Choudhury</h1> 
+      </Fade>
     </div>
     <Sticky holderCmp={'nav'}>
     <div className="nav-wrapper">
+    <Fade left>
       <ul>
         <ListList to="portfolio"/>
         <ListList to="experience"/>
         <ListList to="about"/>
         <ListList to="contact"/>
       </ul>
+    </Fade> 
     </div>
     </Sticky>
   </header>
