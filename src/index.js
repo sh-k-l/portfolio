@@ -1,16 +1,12 @@
-import React from 'react';
+import React from 'react'
 // import ReactDOM from 'react-dom';
-import { render } from 'react-snapshot';
+import { render } from 'react-snapshot'
 
 import 'font-awesome/css/font-awesome.min.css'
 
-import './index.scss';
-import './styles/main.scss';
+import './index.scss'
+import './styles/main.scss'
 
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from './App'
 
-
-render(<App />, document.getElementById('root'));
-
-serviceWorker.unregister();
+render(<App />, document.getElementById('root'))

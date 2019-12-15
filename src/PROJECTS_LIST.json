@@ -1,25 +1,24 @@
 [
   {
+    "title": "Our Borough",
+    "tags": ["JavaScript", "jQuery", "ArcGIS JS API"],
+    "demo": "https://mapsat.tmbc.gov.uk/maps/ourborough/",
+    "description": "Designed and developed while working at TMBC. A centralised point for users to enter their address and find information about nearby facilities, ranging from council buildings to recycling sites, car parks and nurseries in the borough. Uses cookies to save application state. Autoplots home address for registered users. Uses the ArcGIS JS API.",
+    "image": "ourborough.png"
+  },
+  {
     "title": "Onion or not?",
-    "tags": ["Frontend", "JavaScript", "React"],
+    "tags": ["JavaScript", "React"],
     "code": "https://github.com/sh-k-l/onion-or-not",
     "demo": "https://sh-k-l.github.io/onion-or-not/",
-    "description": "Game. Gets two headlines from Reddit, one real and one fake. Pick the real one. How many can you get in a row?",
+    "description": "Simple game. Gets two headlines from Reddit, one real and one fake. Pick the real one. How many can you get in a row?",
     "image": "onion-or-not.png"
   },
   {
-    "title": "What's on tonight?",
-    "tags": ["Frontend", "JavaScript", "React"],
-    "code": "https://github.com/sh-k-l/whatsontonight",
-    "demo": "https://sh-k-l.github.io/whatsontonight/",
-    "description": "Displays the prime time US scripted TV shows airing on a given day. Season premieres are highlighted with yellow borders.",
-    "image": "whats-on-tonight.png"
-  },
-  {
     "title": "Portfolio",
-    "tags": ["Frontend", "JavaScript", "React"],
+    "tags": ["JavaScript", "React"],
     "code": "https://github.com/sh-k-l/portfolio",
-    "description": "Personal portfolio built with React (because now that I've used JSX, I don't want to go back) and styled with Sass.",
+    "description": "Personal portfolio built with React (because I happened to be learning React while writing it) and styled with Sass.",
     "image": "portfolio.png"
   }
 ]

@@ -1,36 +1,45 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import Sticky from 'react-sticky-el';
-import Fade from 'react-reveal/Fade';
+import React from 'react'
+import { Link } from 'react-scroll'
+import Sticky from 'react-sticky-el'
+import Fade from 'react-reveal/Fade'
 
-const ListList = (props) => (
-  <li className="hover-underline-animation">      
-    <Link activeClass="active" to={props.to} spy={true} smooth={true} offset={-100} duration={1000} delay={0}>
+const ListNode = (props) => (
+  <li className="hover-underline-animation">
+    <Link
+      activeClass="active"
+      to={props.to}
+      spy={true}
+      smooth={true}
+      offset={-100}
+      duration={1000}
+      delay={0}
+    >
       {props.to}
     </Link>
   </li>
-);
-
+)
 
 export default () => (
-  <header>    
+  <header>
     <div className="header-text-wrapper">
       <Fade up>
-      <h1>Shakil <br/>Choudhury</h1> 
+        <h1>
+          Shakil <br />
+          Choudhury
+        </h1>
       </Fade>
     </div>
     <Sticky holderCmp={'nav'}>
-    <div className="nav-wrapper">
-    <Fade left>
-      <ul>
-        <ListList to="portfolio"/>
-        <ListList to="experience"/>
-        <ListList to="about"/>
-        <ListList to="contact"/>
-      </ul>
-    </Fade> 
-    </div>
+      <div className="nav-wrapper">
+        <Fade left>
+          <ul>
+            <ListNode to="portfolio" />
+            <ListNode to="experience" />
+            <ListNode to="about" />
+            <ListNode to="contact" />
+          </ul>
+        </Fade>
+      </div>
     </Sticky>
   </header>
-  
 )

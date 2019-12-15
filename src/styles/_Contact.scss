@@ -66,6 +66,9 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .contact-node:not(:first-child){
     margin-top:1rem;
   }
 
