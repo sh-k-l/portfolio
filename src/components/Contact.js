@@ -46,7 +46,7 @@ export default () => {
               <div className="icon-holder">
                 <i className="fa fa-phone"></i>
               </div>{' '}
-              {showPhone ? '07449772760' : 'Hover to show'}
+              {showPhone ? '07449772760' : 'Hover to show #'}
             </div>
             <div className="contact-node">
               <div className="icon-holder">
