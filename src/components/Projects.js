@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Fade from 'react-reveal/Fade'
 
 import PROJECTS_LIST from '../PROJECTS_LIST'
@@ -9,7 +9,7 @@ const Project = (props) => {
       <div className="project-image-wrapper">
         <img
           className="project-image"
-          src={'/images/' + props.image}
+          src={'/images/' + (props.image || "placeholder.png")}
           alt={'Image of ' + props.title}
         />
         <div className="project-links">

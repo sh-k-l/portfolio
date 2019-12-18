@@ -8,11 +8,7 @@ export default () => (
       <div className="about-wrapper">
         <img src="/images/self.jpg" alt="" />
         <p>
-          A logical individual who finds programming fulfilling, thereby
-          pursuing a challenging career in the computer science field. I am a
-          hard worker with great organisational skills and self-motivation.
-          Currently a third year student studying for a BSc degree in Computer
-          Science with a year in industry at the University of Kent.{' '}
+        A logical individual with a passion for software development pursuing a challenging career in the computer science field.  A hard worker with great organisational skills and self-motivation. Currently a third year student studying for a BSc in Computer Science (with a year in industry) at the University of Kent.{' '}
         </p>
       </div>
     </Fade>

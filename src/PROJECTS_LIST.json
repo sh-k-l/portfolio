@@ -1,5 +1,10 @@
 [
   {
+    "title": "Final Year Project",
+    "tags": ["JavaScript", "React", "Node.js", "Redux"],
+    "description": "Currently working on my final year project for my degree. The project is a modern full stack web application comprised of a decoupled Node JS REST API with an intricate, modular React front end with a Redux managed application state."
+  },
+  {
     "title": "Our Borough",
     "tags": ["JavaScript", "jQuery", "ArcGIS JS API"],
     "demo": "https://mapsat.tmbc.gov.uk/maps/ourborough/",
