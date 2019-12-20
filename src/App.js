@@ -13,8 +13,8 @@ class App extends Component {
     return (
       <Layout>
         <Projects/>
-        <Experience/>
         <About/>
+        <Experience/>
         <Contact/>
       </Layout>
     );

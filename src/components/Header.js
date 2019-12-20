@@ -34,8 +34,8 @@ export default () => (
         <Fade left>
           <ul>
             <ListNode to="portfolio" />
-            <ListNode to="experience" />
             <ListNode to="about" />
+            <ListNode to="experience" />            
             <ListNode to="contact" />
           </ul>
         </Fade>

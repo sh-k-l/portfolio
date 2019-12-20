@@ -8,7 +8,8 @@ export default () => (
       <div className="about-wrapper">
         <img src="/images/self.jpg" alt="" />
         <p>
-        Hi, I’m Shakil! I think hard and work harder. I enjoy solving problems and being challenged, so I’m looking to embark on a career in software development upon completion of my BSc in Computer Science.
+          Hi, I’m Shakil! I think hard and work harder. I enjoy solving problems and being challenged, so I’m looking to embark on a career in software development upon completion of my BSc in Computer Science.
+          <br/> In my downtime I enjoy playing online video games with friends, watching football and reading books.        
         </p>
       </div>
     </Fade>
