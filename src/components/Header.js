@@ -22,7 +22,7 @@ const ListNode = (props) => (
 export default () => (
   <header>
     <div className="header-text-wrapper">
-      <Fade up>
+      <Fade down>
         <h1>
           Shakil <br />
           Choudhury
@@ -31,7 +31,7 @@ export default () => (
     </div>
     <Sticky holderCmp={'nav'}>
       <div className="nav-wrapper">
-        <Fade left>
+        <Fade up>
           <ul>
             <ListNode to="portfolio" />
             <ListNode to="about" />
