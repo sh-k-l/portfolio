@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade'
 export default () => (
   <div className="section experience-wrapper" id="experience">
     <h2>Experience & Education</h2>
-    <Fade left>
+    <Fade right>
       <div className="experience">
         <div className="experience-info">
           <h3>Tonbridge & Malling Borough Council</h3>

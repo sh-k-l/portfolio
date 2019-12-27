@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade'
 export default () => (
   <div className="section" id="about">
     <h2>About Me</h2>
-    <Fade right>
+    <Fade left>
       <div className="about-wrapper">
         <img src="/images/self.jpg" alt="" />
         <p>
