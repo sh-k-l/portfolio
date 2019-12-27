@@ -1,7 +1,7 @@
 [
   {
     "title": "Final Year Project",
-    "tags": ["JavaScript", "React", "Node.js", "Redux"],
+    "tags": ["JavaScript", "React", "Node.js", "Redux", "Sass"],
     "description": "Currently working on my final year project for my degree. The project is a modern full stack web application comprised of a decoupled Node JS REST API with an intricate, modular React front end with a Redux managed application state."
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "title": "Portfolio",
-    "tags": ["JavaScript", "React"],
+    "tags": ["JavaScript", "React", "Sass"],
     "code": "https://github.com/sh-k-l/portfolio",
     "description": "Personal portfolio built with React and styled with Sass.",
     "image": "portfolio.png"
