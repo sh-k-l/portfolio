@@ -28,17 +28,19 @@
   
   @media only screen and (min-width: $breakpoint-sm){
     flex-direction: row;
+    align-items: center;
   }
 }
 
 .project-image-wrapper {
   position: relative;
+  width:100%;
   // display: flex;
   // flex:1;
   // width: 80%;
 
-  @media only screen and (min-width: $breakpoint-md){
-
+  @media only screen and (min-width: $breakpoint-sm){
+    width:unset;
   }
 }
 
