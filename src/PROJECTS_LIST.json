@@ -1,8 +1,11 @@
 [
   {
-    "title": "Final Year Project",
-    "tags": ["JavaScript", "React", "Node.js", "Redux", "Sass"],
-    "description": "Currently working on my final year project for my degree. The project is a modern full stack web application comprised of a decoupled Node JS REST API with an intricate, modular React front end with a Redux managed application state."
+    "title": "TV Pal",
+    "tags": ["React", "Redux", "Sass", "Node.js", "Express", "MongoDB"],
+    "demo": "https://tv-pal-2020.herokuapp.com/",
+    "code": "https://github.com/sh-k-l/tvpal",
+    "description": "A full stack MERN application to manage yours favourite TV shows. Check off episodes as you watch them. Rank your TV shows into a rankings list and share the list. See if any new episodes are airing in the next month.",
+    "image": "tv-pal.png"
   },
   {
     "title": "Our Borough",
