@@ -8,6 +8,13 @@
     "image": "tv-pal.png"
   },
   {
+    "title": "EasyNotes",
+    "tags": ["C#", ".NET Core", "WPF"],
+    "code": "https://github.com/sh-k-l/EasyNotes",
+    "description": "A simple notes application that autosaves notes to text files. I was tired of using notepad/notepad++ so wrote my own basic solution for what I wanted: a basic application similar to the default notes app on my phone. Also a chance to refamilarise myself with a strongly typed and object orientated language.",
+    "image": "easy-notes.png"
+  },
+  {
     "title": "Our Borough",
     "tags": ["JavaScript", "jQuery", "ArcGIS JS API"],
     "demo": "https://mapsat.tmbc.gov.uk/maps/ourborough/",
