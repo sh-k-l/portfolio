@@ -45,9 +45,9 @@ export default () => (
               with a year in industry
             </span>
           </h3>
-          <p>University of Kent - Graduating Summer 2020</p>
+          <p>University of Kent - Class of 2020</p>
           <p>
-            Grade: <span className="light-text-color">TBC</span>
+            Grade: <b>First Class Honours</b>
           </p>
         </div>
         <img alt="University of Kent" src="/images/ukc.jpg" />
