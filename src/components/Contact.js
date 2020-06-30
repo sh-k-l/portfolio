@@ -13,10 +13,11 @@ export default () => {
         <Fade right>
           <div className="contact-form-wrapper">
             <form
-              name="contact"
+              name="contact-showing"
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
+              value="contact"
             >
               <p class="hidden">
                 <label>
