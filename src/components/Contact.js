@@ -12,7 +12,7 @@ export default () => {
       <div className="contact-wrapper">
         <Fade right>
           <div className="contact-form-wrapper">
-            <form name="contact" method="post">
+            <form name="contact" method="post" data-netlify-recaptcha="true">
               <input type="hidden" name="form-name" value="contact" />
               <input name="bot-field" className="hidden" />
               <div>
@@ -27,6 +27,7 @@ export default () => {
                 <label htmlFor="message">Message:</label>
                 <textarea required name="message" id="message"></textarea>
               </div>
+              <div data-netlify-recaptcha="true"></div>
               <button type="submit">Send</button>
             </form>
           </div>
