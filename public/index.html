@@ -20,10 +20,11 @@
     <title>Shakil Choudhury</title>
   </head>
   <body>
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact" netlify hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
+      <div data-netlify-recaptcha="true"></div>
     </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

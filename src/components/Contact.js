@@ -16,9 +16,14 @@ export default () => {
               name="contact"
               method="POST"
               data-netlify="true"
-              data-netlify-recaptcha="true"
+              netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <p class="hidden">
+                <label>
+                  Don’t fill this out if you're human:{' '}
+                  <input name="bot-field" />
+                </label>
+              </p>
               <div>
                 <label htmlFor="name">Your Name:</label>
                 <input required type="text" name="name" id="name" />
@@ -31,7 +36,6 @@ export default () => {
                 <label htmlFor="message">Message:</label>
                 <textarea required name="message" id="message"></textarea>
               </div>
-              <div data-netlify-recaptcha="true"></div>
               <button type="submit">Send</button>
             </form>
           </div>
