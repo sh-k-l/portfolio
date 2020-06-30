@@ -12,19 +12,8 @@ export default () => {
       <div className="contact-wrapper">
         <Fade right>
           <div className="contact-form-wrapper">
-            <form
-              name="contact-showing"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              value="contact"
-            >
-              <p class="hidden">
-                <label>
-                  Don’t fill this out if you're human:{' '}
-                  <input name="bot-field" />
-                </label>
-              </p>
+            <form name="contact" method="post">
+              <input type="hidden" name="form-name" value="contact" />
               <div>
                 <label htmlFor="name">Your Name:</label>
                 <input required type="text" name="name" id="name" />
