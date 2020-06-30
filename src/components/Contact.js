@@ -14,6 +14,7 @@ export default () => {
           <div className="contact-form-wrapper">
             <form name="contact" method="post">
               <input type="hidden" name="form-name" value="contact" />
+              <input name="bot-field" className="hidden" />
               <div>
                 <label htmlFor="name">Your Name:</label>
                 <input required type="text" name="name" id="name" />
