@@ -12,13 +12,8 @@ export default () => {
       <div className="contact-wrapper">
         <Fade right>
           <div className="contact-form-wrapper">
-            <form
-              name="contact"
-              method="post"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              data-netlify-recaptcha="true"
-            >
+            <form name="contact" method="post" data-netlify-recaptcha="true">
+              <input type="hidden" name="form-name" value="contact" />
               <input name="bot-field" className="hidden" />
               <div>
                 <label htmlFor="name">Your Name:</label>
