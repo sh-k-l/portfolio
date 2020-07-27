@@ -8,13 +8,6 @@
     "image": "tv-pal.png"
   },
   {
-    "title": "EasyNotes",
-    "tags": ["C#", ".NET Core", "WPF"],
-    "code": "https://github.com/sh-k-l/EasyNotes",
-    "description": "A simple notes application that autosaves notes to text files. I was tired of using notepad/notepad++ so wrote my own basic solution for what I wanted: a basic application similar to the default notes app on my phone. Also a chance to refamilarise myself with a strongly typed and object orientated language.",
-    "image": "easy-notes.png"
-  },
-  {
     "title": "Our Borough",
     "tags": ["JavaScript", "jQuery", "ArcGIS JS API"],
     "demo": "https://mapsat.tmbc.gov.uk/maps/ourborough/",
@@ -28,6 +21,13 @@
     "demo": "https://sh-k-l.github.io/onion-or-not/",
     "description": "Simple game. Gets two headlines from Reddit, one real and one fake. Pick the real one. How many can you get in a row?",
     "image": "onion-or-not.png"
+  },
+  {
+    "title": "EasyNotes",
+    "tags": ["C#", ".NET Core", "WPF"],
+    "code": "https://github.com/sh-k-l/EasyNotes",
+    "description": "A simple notes application that autosaves notes to text files. I was tired of using notepad/notepad++ so wrote my own basic solution for what I wanted: a basic application similar to the default notes app on my phone. Also a chance to refamilarise myself with a strongly typed and object orientated language.",
+    "image": "easy-notes.png"
   },
   {
     "title": "Portfolio",
