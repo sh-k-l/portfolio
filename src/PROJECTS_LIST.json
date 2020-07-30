@@ -15,6 +15,12 @@
     "image": "ourborough.png"
   },
   {
+    "title": "CineManager",
+    "tags": ["C#", ".NET Core", "WPF", "ASP.NET"],
+    "code": "https://github.com/sh-k-l/cinemanager",
+    "description": "A learning application produced while learning C# .NET during lockdown 2020. I used this project to learn techniques and principles such as MVVM, dependency injection and SOLID."
+  },
+  {
     "title": "Onion or not?",
     "tags": ["JavaScript", "React"],
     "code": "https://github.com/sh-k-l/onion-or-not",
